@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/jruder/.local/share/nvim/site/pack/packer/start/cmp-zsh",
     url = "https://github.com/tamago324/cmp-zsh"
   },
+  ["efm-langserver"] = {
+    loaded = true,
+    path = "/home/jruder/.local/share/nvim/site/pack/packer/start/efm-langserver",
+    url = "https://github.com/mattn/efm-langserver"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/home/jruder/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -118,6 +123,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/jruder/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/jruder/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,

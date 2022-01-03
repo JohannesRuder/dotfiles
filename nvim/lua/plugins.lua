@@ -7,6 +7,9 @@ return require('packer').startup(function()
   -- Speed up require
   use 'lewis6991/impatient.nvim'
 
+  -- LSP
+  use {'neovim/nvim-lspconfig'}
+
   -- Completion
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-cmdline"
@@ -33,5 +36,8 @@ return require('packer').startup(function()
   
   -- Treesitter
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
+  -- Linting and formatting
+  use {'mattn/efm-langserver'}
 
 end)
