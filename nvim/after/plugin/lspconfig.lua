@@ -10,3 +10,16 @@ require'lspconfig'.clangd.setup{
 	"-j=8",
       }
 }
+
+require "lspconfig".efm.setup{
+    init_options = {documentFormatting = true},
+    settings = {
+        rootMarkers = {".git/"},
+	filetypes = { 'cpp' },
+        languages = {
+	    cpp = {
+		{formatCommand = "clang-format-12 --style=file", formatStdin = true}
+	    }
+        }
+    }
+}

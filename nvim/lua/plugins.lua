@@ -9,6 +9,7 @@ return require('packer').startup(function()
 
   -- LSP
   use {'neovim/nvim-lspconfig'}
+  use {'nvim-lua/lsp_extensions.nvim'}
 
   -- Completion
   use "hrsh7th/nvim-cmp"
@@ -40,4 +41,15 @@ return require('packer').startup(function()
   -- Linting and formatting
   use {'mattn/efm-langserver'}
 
+  -- 
+  use {
+  "folke/trouble.nvim",
+  requires = "kyazdani42/nvim-web-devicons",
+  config = function()
+    require("trouble").setup {
+	auto_preview = false,
+        auto_fold = true,
+    }
+  end
+}
 end)
