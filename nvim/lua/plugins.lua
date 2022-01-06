@@ -38,8 +38,11 @@ return require('packer').startup(function()
   -- Treesitter
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
-  -- Linting and formatting
+  -- Linting
   use {'mattn/efm-langserver'}
+
+  -- Formatting
+  use {'sbdchd/neoformat'}
 
   -- 
   use {

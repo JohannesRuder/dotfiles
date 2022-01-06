@@ -11,15 +11,17 @@ require'lspconfig'.clangd.setup{
       }
 }
 
+require'lspconfig'.pyright.setup{}
+
 require "lspconfig".efm.setup{
     init_options = {documentFormatting = true},
     settings = {
         rootMarkers = {".git/"},
-	filetypes = { 'cpp' },
+	filetypes = {'py'},
         languages = {
-	    cpp = {
-		{formatCommand = "clang-format-12 --style=file", formatStdin = true}
-	    }
+	    python = {
+	    	{formatCommand = "black --quiet -", formatStdin = true}
+	    },
         }
     }
 }

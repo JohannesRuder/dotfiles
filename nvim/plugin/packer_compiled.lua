@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/jruder/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/jruder/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/jruder/.local/share/nvim/site/pack/packer/start/nvim-cmp",
